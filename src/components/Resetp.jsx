@@ -19,7 +19,7 @@ function Resetp() {
 let loadData = async ()=>{
   
 try {
-  let verifiction = await axios.get("https://webcode2stackoverflow.herokuapp.com/token-verify",{
+  let verifiction = await axios.get("https://stock-over-flow-clone.onrender.com",{
   headers:{
 'authorization':token
   }
@@ -56,7 +56,7 @@ if(values.email === ""){
     onSubmit: async (values)=>{
 try {
   console.log(values)
-await axios.put("https://webcode2-backend.vercel.app/update",values,{
+await axios.put("https://stock-over-flow-clone.onrender.com",values,{
 headers:{
   'authorization':token
 }

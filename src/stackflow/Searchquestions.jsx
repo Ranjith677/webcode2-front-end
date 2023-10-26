@@ -19,7 +19,7 @@ function Searchquestions() {
       let keyWord = {
         tag: window.localStorage.getItem('search-word')
       }
-      let searchTag = await axios.post('https://webcode2-backend.vercel.app/search', keyWord, {
+      let searchTag = await axios.post('https://stock-over-flow-clone.onrender.com/search', keyWord, {
         headers: {
           'auth': window.localStorage.getItem('app-token')
         }

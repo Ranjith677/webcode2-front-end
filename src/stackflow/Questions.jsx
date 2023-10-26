@@ -27,7 +27,7 @@ return errors
     },
     onSubmit:async(values)=>{
 try {
-  let postQues=await axios.post('https://webcode2-backend.vercel.app/ques-post',values,{
+  let postQues=await axios.post('https://stock-over-flow-clone.onrender.com',values,{
     headers:{
       'auth':window.localStorage.getItem('app-token'),
       'userid':window.localStorage.getItem('userId')

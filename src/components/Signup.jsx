@@ -31,7 +31,7 @@ function Signup() {
         },
         onSubmit: async (values) => {
         try {
-            let insert = await axios.post('https://webcode2-backend.vercel.app/userpost',values)
+            let insert = await axios.post('https://stock-over-flow-clone.onrender.com',values)
             console.log(insert)
             setMsg(insert.data.messege)
             handleShow()
